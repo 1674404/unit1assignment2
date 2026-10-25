@@ -1,8 +1,7 @@
-/* Person.java:  
- * This class provides a basic object to extend in future labs. 
- * Comments are omitted for accessor and mutator methods    
- * Author: John Cigas
- * Last updated: July 2021
+/* Person.java 
+ - Store person's name and age, provide superclass used by contestant
+ - Abraham Atencio Park ID: 1674404
+ - Oct 25, 2026
  */
 
 public class Person {
@@ -30,7 +29,7 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", age=" + age + "]";
