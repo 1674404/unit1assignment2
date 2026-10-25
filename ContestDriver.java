@@ -13,8 +13,13 @@ public class ContestDriver {
 		System.out.println("Starting Simulation");
 
 		/*  Change these two values for the fairness run and timing experiments.*/
-        int numberOfContestants = 8;
-        int numberOfRounds = 12;
+        int numberOfContestants = 45000;
+        int numberOfRounds = 10000;
+
+		if (args.length == 2) {
+    		numberOfContestants = Integer.parseInt(args[0]);
+   			numberOfRounds = Integer.parseInt(args[1]);
+		}
 
         ArrayList<Contestant> line =
                 new ArrayList<>(numberOfContestants);
